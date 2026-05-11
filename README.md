@@ -1,1 +1,1 @@
-# Stylization-layout-web-core-7.7
+# Stylization-layout-web-core-7.8
