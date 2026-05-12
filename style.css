@@ -84,3 +84,21 @@
 .on {
     color: #7E7E82;
 }
+
+.contact-icons img {
+transition: opacity 1s ease-in-out, transform ease-in-out;
+}
+
+.contact-icons img:hover {
+    opacity: 0,5;
+    transform: translateY(-10px);
+}
+
+.bottom-menu span {
+    transition: transform 0,1s ease-in-out;
+    
+}
+
+.bottom-menu span:hover {
+    transform: scale(1.2);
+}
