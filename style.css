@@ -20,8 +20,10 @@
     width: 320px;
     height: 100vh;
     position: fixed;
-    box-shadow: 16px 0px 52px 0px #0E185033;
-    /*box-shadow: -2px 0px 4px 0px #454F7E05;*/
+    overflow: auto;
+    box-shadow:
+    16px 0px 52px 0px #0E185033,
+    -2px 0px 4px 0px #454F7E05;
     background: #ffffff;
 }
 
@@ -50,6 +52,7 @@
 
 .bottom-menu {
     padding: 20px;
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,7 +61,8 @@
     background: none;
 }
 
-.contacts {
+.footer {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -78,7 +82,14 @@
 .languages {
     display: flex;
     margin-top: 20px;
-    gap: 10px;
+    gap: 15px;
+}
+
+.languages button {
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .on {
@@ -101,4 +112,10 @@ transition: opacity 1s ease-in-out, transform ease-in-out;
 
 .bottom-menu span:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+    .swiper {
+        display: none;
+    }
 }
